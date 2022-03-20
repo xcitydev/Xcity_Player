@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NowPlayingFragment">
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:backgroundTint="#050505"
+        android:id="@+id/minize"
+        android:elevation="70dp"
+        android:layout_gravity="top|center_horizontal"
+        android:src="@drawable/ic_minimize" />
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_bottom_player"
+        android:padding="5dp"
+        android:background="@drawable/round_corners">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/picsart1"
+            android:id="@+id/bottom_album_art"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_skip_next"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/bottom_skip_next"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/bottom_play"
+            android:layout_toLeftOf="@id/bottom_play"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_skip_previous"
+            android:id="@+id/bottom_skip_prev" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@id/bottom_skip_next"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_play"
+            android:id="@+id/bottom_play"
+            android:layout_toLeftOf="@id/bottom_skip_next" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewBottomView"
+            android:maxLines="1"
+            android:text="Song Name by King"
+            android:textSize="13sp"
+            android:layout_toEndOf="@id/bottom_album_art"
+            android:textColor="@android:color/white"
+            android:padding="3dp"
+            android:layout_toStartOf="@id/bottom_skip_prev"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@id/bottom_album_art"
+            android:layout_toLeftOf="@id/bottom_skip_prev" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistBottomView"
+            android:maxLines="1"
+            android:layout_below="@id/textViewBottomView"
+            android:text="X-city Way"
+            android:textSize="10sp"
+            android:layout_toEndOf="@id/bottom_album_art"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:layout_toStartOf="@id/bottom_skip_prev"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toRightOf="@id/bottom_album_art"
+            android:layout_toLeftOf="@id/bottom_skip_prev" />
+    </RelativeLayout>
+
+</FrameLayout>

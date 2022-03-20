@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="search"
+        android:id="@+id/search_option"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item android:title="Sort_by"
+        android:id="@+id/sort_options"
+        app:showAsAction="never">
+        <menu>
+            <item android:title="Name"
+                android:id="@+id/by_name"
+                app:showAsAction="never"/>
+            <item android:title="Date"
+                android:id="@+id/by_date"
+                app:showAsAction="never"/>
+            <item android:title="Size"
+                android:id="@+id/by_size"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+    <item android:id="@+id/turnOff" android:title="Unique Number &amp; Btt earned" android:icon="@drawable/contact_about"
+        app:showAsAction="never"/>
+    <item android:id="@+id/about_view" android:title="About Creator" android:icon="@drawable/contact_about"
+        app:showAsAction="never"/>
+
+</menu>

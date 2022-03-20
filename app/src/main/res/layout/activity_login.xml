@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg2"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN In"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:id="@+id/signInTextView"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal" />
+    <ImageView
+        android:layout_width="150dp"
+        android:elevation="40dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/picsart1"
+        android:layout_below="@id/signInTextView"
+        android:id="@+id/x_ciyLogo"/>
+
+    <EditText
+        android:id="@+id/emailSignIn"
+        android:layout_width="350dp"
+        android:singleLine="true"
+        android:layout_height="50dp"
+        android:layout_below="@id/x_ciyLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_corners"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/gradient_bg2"
+        android:elevation="50dp"
+        android:text="Sign In" />
+
+    <TextView
+        android:id="@+id/dont_have_acct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/x_ciyLogo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Don't have an account?"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:id="@+id/passwordSignIn"
+        android:hint="Password"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_corners"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_below="@id/emailSignIn"
+        android:gravity="center" />
+</RelativeLayout>

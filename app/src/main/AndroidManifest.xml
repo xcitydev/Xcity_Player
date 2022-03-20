@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xcityprime.myaudioplayer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/picsart2"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/picsart1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity android:name=".PickFilesActivity" />
+        <activity android:name=".About_Creator" />
+        <activity android:name=".Folder_player_Activity" />
+        <activity android:name=".Video_player_activity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/MyStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AlbumDetails" />
+        <activity
+            android:name=".PlayerActivity"
+            android:theme="@style/MyStyle" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NotificationTest" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9988395020991274~2000702259" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="actionPlay" />
+                <action android:name="actionNext" />
+                <action android:name="actionPrev" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.xcityprime.myaudioplayer"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

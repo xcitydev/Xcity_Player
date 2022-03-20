@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116809248073",
+    "project_id": "my-audio-player-8cd1e",
+    "storage_bucket": "my-audio-player-8cd1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116809248073:android:7868b2c580468b34013e98",
+        "android_client_info": {
+          "package_name": "com.xcityprime.myaudioplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116809248073-22t65huvmioqs0knrvkmkg1mitq8r0q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbtxRzhu8-MF6Sg1bsUmlJkPQovmky_yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116809248073-22t65huvmioqs0knrvkmkg1mitq8r0q9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

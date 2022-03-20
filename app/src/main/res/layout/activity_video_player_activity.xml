@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Video_player_activity">
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/exoplayer_movie"
+        app:hide_on_touch="true"
+        android:background="#000000"
+        app:resize_mode="fit"
+        app:rewind_increment="10000"
+        app:show_timeout="5000"
+        app:shutter_background_color="#000000"
+        app:use_controller="true"
+        app:fastforward_increment="10000"
+        app:controller_layout_id="@layout/custome_controller_view"
+        app:player_layout_id="@layout/exo_simple_player_view"/>
+
+</LinearLayout>

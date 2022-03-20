@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.hugeterry.coordinatortablayout.CoordinatorTabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/coordinatorLay"
+    tools:context=".MainActivity">
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/viewPager" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLay"
+        android:layout_gravity="bottom">
+        <fragment
+            android:name="com.xcityprime.myaudioplayer.NowPlayingFragment"
+            android:layout_width="match_parent"
+            android:id="@+id/nowPlayingLayout"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_now_playing"/>
+    </FrameLayout>
+
+</cn.hugeterry.coordinatortablayout.CoordinatorTabLayout>
